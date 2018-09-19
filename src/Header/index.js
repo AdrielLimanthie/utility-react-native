@@ -1,6 +1,9 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
+// Constants
+import { HEADER_COLOR } from "../constants/colors";
+
 const Header = () => {
   return (
     <React.Fragment>
@@ -19,13 +22,15 @@ const styles = StyleSheet.create({
   },
   header: {
     height: 40,
-    backgroundColor: "#c481fb",
+    backgroundColor: HEADER_COLOR,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    elevation: 8
   },
   headerText: {
     color: "#fff",
-    fontSize: 20
+    fontSize: 20,
+    fontWeight: "600"
   }
 });
 

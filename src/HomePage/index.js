@@ -1,6 +1,12 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
+// Components
+import ActionCard from "./components/ActionCard";
+
+// Constants
+import { PAGE_BACKGROUND_COLOR } from "../constants/colors";
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +17,10 @@ class HomePage extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This is home page</Text>
+        <ActionCard text="Secretary" style={styles.cardStyle} />
+        <ActionCard text="Chess" style={styles.cardStyle} />
+        <ActionCard text="Food" style={styles.cardStyle} />
+        <ActionCard text="Board Game" style={styles.cardStyle} />
       </View>
     );
   }
@@ -20,9 +29,14 @@ class HomePage extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ddd",
-    alignItems: "center",
-    justifyContent: "center"
+    flexDirection: "row",
+    flexWrap: "wrap",
+    padding: 8,
+    backgroundColor: PAGE_BACKGROUND_COLOR
+  },
+  cardStyle: {
+    padding: 8,
+    flexBasis: "50%"
   }
 });
 
