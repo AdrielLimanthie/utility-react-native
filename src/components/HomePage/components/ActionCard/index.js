@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 // Constants
-import { TEXT_PRIMARY_BLACK } from "../../../constants/colors";
+import { TEXT_PRIMARY_BLACK } from "../../../../constants/colors";
 
 const ActionCard = ({ url, text, style }) => {
   return (

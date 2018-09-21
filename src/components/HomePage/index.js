@@ -5,7 +5,7 @@ import { StyleSheet, View, Text } from "react-native";
 import ActionCard from "./components/ActionCard";
 
 // Constants
-import { PAGE_BACKGROUND_COLOR } from "../constants/colors";
+import { PAGE_BACKGROUND_COLOR } from "../../constants/colors";
 
 class HomePage extends React.Component {
   constructor(props) {

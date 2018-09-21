@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { NativeRouter, Route } from "react-router-native";
 
 // Components
-import Header from "./src/Header";
-import HomePage from "./src/HomePage";
+import Header from "./src/components/Header";
+import HomePage from "./src/components/HomePage";
 
 export default class App extends React.Component {
   render() {

@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
 // Constants
-import { HEADER_COLOR } from "../constants/colors";
+import { HEADER_COLOR } from "../../constants/colors";
 
 const Header = () => {
   return (
